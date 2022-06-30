@@ -48,7 +48,7 @@ DEPS += emqx_kafka_bridge
 # for erlang.mk
 $(foreach dep,$(MAIN_APPS),$(eval dep_$(call app_name,$(dep)) = git-emqx https://github.com/emqx/$(dep) $(call app_vsn,$(dep))))
 # dep_emqx_kafka_bridge = git https://github.com/bob403/emqx_kafka_bridge.git master
-dep_emqx_kafka_bridge = git hhttps://github.com/xunuohope1010/emqx_kafka_bridge.git v3.0
+dep_emqx_kafka_bridge = git https://github.com/xunuohope1010/emqx_kafka_bridge.git v3.0
 # Add this dependency before including erlang.mk
 all:: OTP_21_OR_NEWER
 
